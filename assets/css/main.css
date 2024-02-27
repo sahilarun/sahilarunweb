@@ -5234,13 +5234,8 @@
 
       @media (min-width:768px) {
         .pt-feature-figure {
-          top: 53px;
-          left: 50px;
-          width: 520px;
-          height: 250px;
-          -webkit-border-radius: 160px;
-          -moz-border-radius: 160px;
-          border-radius: 160px
+          width: 920px; /* Increase the width of the container */
+          height: 250px; /* Increase the height of the container */
         }
       }
 
@@ -5282,7 +5277,11 @@
         }
       }
 
-      .pt-feature-figure img,
+      .pt-feature-figure img {
+        width: 100%; /* Make the image fill the container horizontally */
+        height: 100%; /* Make the image fill the container vertically */
+        object-fit: cover; /* Resize the image to maintain aspect ratio and cover the container */
+      }
       .pt-feature-figure video {
         position: absolute;
         top: 0;
